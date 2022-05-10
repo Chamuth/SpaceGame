@@ -31,7 +31,7 @@ public class DynamicOcclusion : MonoBehaviour
   public int OverheadCount = 160;
   public int LandedCount = 200;
 
-  private OcclusionState _State = OcclusionState.Distant;
+  OcclusionState _State = OcclusionState.Distant;
   List<PlanetTile> _tiles = new List<PlanetTile>();
   Vector3 previousPosition = Vector3.zero;
 
@@ -106,21 +106,18 @@ public class DynamicOcclusion : MonoBehaviour
 
     if (distance < LandedDistance)
     {
-      Debug.Log("Landed");
       ProcessOcclusion(OcclusionState.Landed);
       return;
     }
 
     if (distance < OverheadDistance)
     {
-      Debug.Log("Overhead");
       ProcessOcclusion(OcclusionState.Overhead);
       return;
     }
 
     if (distance > OverheadDistance)
     {
-      Debug.Log("Distant");
       ProcessOcclusion(OcclusionState.Distant);
       return;
     }

@@ -54,10 +54,11 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _SpaceOffset: 0.075899415
+    - _SpaceOffset: 0
     - _Star_Density: 150
     - _Star_Strength: 0.1
     - _Strength: 15.41
+    - _SunAngle: 0.23637418
     - _Sun_Halo: -0.38
     - _Sun_Halo_Step_1: -15.13
     - _Sun_Halo_Step_2: 0.48
